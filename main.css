@@ -1,60 +1,207 @@
-html, body{
+*{
+    box-sizing: border-box;
+}
+body{
     background-color:#4CAF50;
 }
-.headerContainer{
-    padding:30px 0px 30px 70px;
-    display:inline-block;
-    overflow: hidden;
-}
-.headerLogo{
-    color:white;
-    text-transform: uppercase;
-    padding:0 30px 0 30px;
-    border-right:3px solid white;
-    line-height:50px;
-    font-size:18px;
-    font-family:Arial, Helvetica, sans-serif;
-    width:fit-content;
-    display:inline-block;
-    font-weight: 700;
-    margin-left:40px;
-}
 
-.headerLogo:hover{
-    background-color:white ;
-    color:#4CAF50;
+header{
+    padding:15px 20px;
+}
+header a {
+    color:white;
+    font-size: 14px;
     text-decoration: none;
 }
-.navbarLinks {  
-    text-align: center;
-    padding-top:10px;
-    padding-left:150px; 
-    overflow: hidden;
-    display:inline-block;
-}
-.navbarLinks a{
-    color:white;
-    text-transform: uppercase;
-    font-size:13px;
-    font-weight: 600;;
-    padding:10px;
+
+header a:hover{
+    color:#37f13d;    
 }
 
-.navbarLinks a:hover{
-    text-decoration: none;
-    background-color:white ;
-    color:#4CAF50;
+
+
+@media (min-width: 1200px){
+.navbar-custom {
+    padding: 2.125rem 5rem 2.125rem 5rem;
 }
+}
+
+@media (min-width: 768px){
+.navbar-custom {
+    padding: 2.125rem 1.5rem 2.125rem 2rem;
+    box-shadow: none;
+    background: transparent;
+}
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:#4e8d50;
+    min-width: 160px;
+    box-shadow:  0px 2px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color:white;
+    padding:12px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown-content a:hover{
+    background:#4e8d50;
+    color:#37f13d;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.navbarContainer{
+    margin-right: auto;
+}
+
+
 .mainContainer{
-    max-width: 50%;
+    margin-top: 4rem;
 }
-.mainText, h1, p{
+
+.mainText{
+    padding-bottom: 3rem;
+    
+}
+.mainText h1{
+    text-align:center;
+    color:white;
+}
+.mainText p{
     color:white;
     text-align: left;
 }
+
 
 .mainImage img{
     width:100%;
     height: auto;
     text-align: right;
+    padding-bottom: 3rem; 
+}
+
+.commentSlider{
+    padding-top: 6.875rem;
+    padding-bottom: 6.375rem;
+    background-color:#3f7341; 
+}
+.slider-container{
+    position:relative;
+}
+
+.commentSlider .swiper-container{
+    position: static;
+    width: 90%;
+    text-align: center;
+}
+
+.imageContainer{
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+
+.commentSlider .author-image{
+    width: 6rem;
+    height: 6rem;
+    margin-right: auto;
+    margin-bottom: 0.25rem;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    
+}
+
+.commentSlider p{
+    color:white;
+}
+
+.commentSlider .comment-section{
+    padding-bottom:0;
+}
+
+.user-comment{
+    font: italic 400 1rem/1.5rem "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.imageContainer .comment-author{
+    padding-top:2rem;
+}
+
+.comment-author{
+    margin-bottom:0;
+    font: 700 1rem/1.5rem "Montserrat", sans-serif;
+    text-align: center;
+}
+
+
+.swiper-button-prev{
+    left: 1rem;
+    width: 1.375rem;
+    background-size: 1.375rem 2.125rem;
+    color:white;
+}
+.swiper-button-next{
+    right: 1rem;
+    width: 1.375rem;
+    background-size: 1.375rem 2.125rem;
+    color:white;
+}
+
+.tabs{
+    background-color:#4e8d50 ;
+    padding-top: 6.875rem;
+    padding-bottom: 6.375rem;
+
+}
+.tabs .text-wrapper p, h4{
+color:#4CAF50;
+}
+
+.tabs h2{
+    margin-bottom: 1.125rem;
+    text-align: center;
+    color:white;
+
+}
+
+.tabs p{
+    color:white;
+}
+.tabs .nav-link:hover{
+    color:#37f13d;
+}
+
+.tabs .nav-tabs{
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    justify-content: center;
+    border-bottom: none;
+    
+}
+
+.tabs .nav-link {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1.375rem 0.25rem 1.375rem;
+    border: none;
+    border-bottom: 0.1875rem solid #f1f1f8;
+    border-radius: 0;
+    color: #f1f1f8;
+    font: 700 1rem/1.75rem "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }

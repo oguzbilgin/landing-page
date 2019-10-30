@@ -5,45 +5,300 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsome-all.min.css">
+    <script src="assets/js/swiper.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <title>Cuma Mesajları</title>
 </head>
 
 <body>
-    <div class="headerContainer Container col-md-12"> <!-- Container start -->    
-        <div class="row"><!-- Row start -->
-            <div class="col-md-4"> <!-- col-md-4 start -->
-        <a  class="headerLogo" href="home.html">Cuma Mesajları</a>
-            </div> <!-- col-md-4 end -->
-        <div class="navbarLinks col-md-8"> <!-- col-md-8 start -->
-                <a href="home.html">Ana Sayfa</a>
-                <a href="">Özellikler</a>
-                <a href="">Önizleme</a>
-                <a href="">detaylar</a>
-                <a href="">iletişim</a>
-            </div> <!-- col-md-8 end -->            
-        </div><!-- Row end -->        
-            </div> <!-- Container end -->               
+    <header>
+    <div class="container-fluid"> <!-- container-fluid start -->
+            <nav class="navbar navbar-expand-md navbar-custom fixed-top"> <!-- navbar start -->
+                    <a class="navbar-brand" href="#">CUMA MESAJLARI</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>                    
+                    <div class="navbar-collapse collapse" id="navbarNav">
+                        <div class="navbarContainer"></div>
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link page-scroll active" href="#">ANASAYFA <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link page-scroll" href="#">OZELLIKLER</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link page-scroll" href="#">ONIZLEME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link page-scroll">DETAYLAR</a>
+                                <div class="dropdown-content">
+                                    <a href="#">SARTLAR KOSULLAR</a>
+                                    <a href="#">GIZLILIK POLITIKASI</a>
+                            </div>                              
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#">ILETISIM</a>
+                        </li>                        
+                      </ul>
+                    </div>
+                  </nav> <!-- navbar end -->
+    </div>  <!-- container-fluid end -->       
     <div class="container mainContainer"> <!-- Container start -->        
         <div class="row"> <!-- Row başlangıcı -->
             <div class="col-lg-6 mainText"> <!-- col-lg-6 start -->
                 <h1>Cuma Mesajları</h1>
-                <p>Mübarek cuma günü için, birbirinden güzel resimli cuma mesajları.
+                <p class="mainparagh">Mübarek cuma günü için, birbirinden güzel resimli cuma mesajları.
                 Her zaman en güncel olan Resimli Cuma Mesajları'nı sevdiğin insanlarla kolayca kopyala yada paylaş.
                 </p>
+                <a class="app-download-link" href="#">
+                        <i class="fab fa-apple"></i>APP STORE
+                </a>
+                <a class="app-download-link" href="#">
+                    <i class="fab fa-apple"></i>PLAY STORE
+            </a>
             </div> <!-- col-lg-6 end -->
             <div class="col-lg-6 mainImage"> <!-- col-lg-6 start -->
-                <img src="img/1.jpg" alt="alternative" class="img img-responsive">
-            </div> <!-- col-lg-6 end -->
-            
-        </div> <!-- Row end -->
-    </div><!-- Container end -->
+                <img src="img/header-iphone.png" alt="alternative" class="img img-responsive">
+            </div> <!-- col-lg-6 end -->            
+        </div> <!-- row end -->
+    </div><!-- container end -->
+</div>
+</header>
+    <div class="commentSlider"> <!-- commentSlider start-->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-12"> <!-- col-lg-12 start -->
+                    <div class="slider-container"> <!-- slider-container start-->
+                        <div class="swiper-container"> <!-- swiper-container start -->
+                            <div class="swiper-wrapper" > <!-- swiper-wrapper start -->
+                                 <div class="swiper-slide"> <!-- swiper-slide start -->
+                                <div class="imageContainer"> <!-- imageContainer start -->
+                                    <img class="author-image" src="img/User_Avatar-04-512.png" alt="alternative">
+                                    <div class="comment-section"> <!-- comment-section start -->
+                                        <p class="user-comment">Cuma mesajları çok güzel fakat mesajlar paylaşılmıyor</p>
+                                        <p class="comment-author">Google kullanıcısı</p>
+                                    </div> <!-- comment-section end -->
+                                </div> <!-- imageContainer end -->
+                                </div> <!-- swiper-slide end -->
 
+                                <div class="swiper-slide"> <!-- swiper-slide start -->
+                                    <div class="imageContainer"> <!-- imageContainer start -->
+                                        <img class="author-image" src="img/User_Avatar-04-512.png" alt="alternative">
+                                        <div class="comment-section"> <!-- comment-section start -->
+                                            <p class="user-comment">Henüz yeni indirdim ama güzel ve kullanımı kolay</p>
+                                            <p class="comment-author">Google kullanıcısı</p>
+                                        </div> <!-- comment-section end -->
+                                    </div> <!-- imageContainer end -->
+                                    </div> <!-- swiper-slide end -->
+
+                                    <div class="swiper-slide"> <!-- swiper-slide start -->
+                                        <div class="imageContainer"> <!-- imageContainer start -->
+                                            <img class="author-image" src="img/User_Avatar-04-512.png" alt="alternative">
+                                            <div class="comment-section"> <!-- comment-section start -->
+                                                <p class="user-comment">Tüm Emeği geçenlerden Allah razı olsun.</p>
+                                                <p class="comment-author">Google kullanıcısı</p>
+                                            </div> <!-- comment-section end -->
+                                        </div> <!-- imageContainer end -->
+                                        </div> <!-- swiper-slide end -->
+
+                                        <div class="swiper-slide"> <!-- swiper-slide start -->
+                                            <div class="imageContainer"> <!-- imageContainer start -->
+                                                <img class="author-image" src="img/User_Avatar-04-512.png" alt="alternative">
+                                                <div class="comment-section"> <!-- comment-section start -->
+                                                    <p class="user-comment">Güzel uygulama</p>
+                                                    <p class="comment-author">Google kullanıcısı</p>
+                                                </div> <!-- comment-section end -->
+                                            </div> <!-- imageContainer end -->
+                                            </div> <!-- swiper-slide end -->
+
+                                            <div class="swiper-slide"> <!-- swiper-slide start -->
+                                                <div class="imageContainer"> <!-- imageContainer start -->
+                                                    <img class="author-image" src="img/User_Avatar-04-512.png" alt="alternative">
+                                                    <div class="comment-section"> <!-- comment-section start -->
+                                                        <p class="user-comment">mukemel ve müthiş</p>
+                                                        <p class="comment-author">Google kullanıcısı</p>
+                                                    </div> <!-- comment-section end -->
+                                                </div> <!-- imageContainer end -->
+                                                </div> <!-- swiper-slide end -->
+
+                                                <div class="swiper-slide"> <!-- swiper-slide start -->
+                                                    <div class="imageContainer"> <!-- imageContainer start -->
+                                                        <img class="author-image" src="img/User_Avatar-04-512.png" alt="alternative">
+                                                        <div class="comment-section"> <!-- comment-section start -->
+                                                            <p class="user-comment">Çök çok güzel her kesin cuması hayırlı olsun Çok</p>
+                                                            <p class="comment-author">Google kullanıcısı</p>
+                                                        </div> <!-- comment-section end -->
+                                                    </div> <!-- imageContainer end -->
+                                                    </div> <!-- swiper-slide end -->
+
+                                                    <div class="swiper-slide"> <!-- swiper-slide start -->
+                                                        <div class="imageContainer"> <!-- imageContainer start -->
+                                                            <img class="author-image" src="img/User_Avatar-04-512.png" alt="alternative">
+                                                            <div class="comment-section"> <!-- comment-section start -->
+                                                                <p class="user-comment">resim üstünü tılayıp paylaşı seç yölendiriyor.</p>
+                                                                <p class="comment-author">Google kullanıcısı</p>
+                                                            </div> <!-- comment-section end -->
+                                                        </div> <!-- imageContainer end -->
+                                                        </div> <!-- swiper-slide end -->
+
+                                                        <div class="swiper-slide"> <!-- swiper-slide start -->
+                                                            <div class="imageContainer"> <!-- imageContainer start -->
+                                                                <img class="author-image" src="img/User_Avatar-04-512.png" alt="alternative">
+                                                                <div class="comment-section"> <!-- comment-section start -->
+                                                                    <p class="user-comment">Çok güzel emeği nize saglik</p>
+                                                                    <p class="comment-author">Google kullanıcısı</p>
+                                                                </div> <!-- comment-section end -->
+                                                            </div> <!-- imageContainer end -->
+                                                            </div> <!-- swiper-slide end -->
+                                
+                                </div> <!-- swiper-wrapper end -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div> <!-- swiper-container end -->
+                    </div> <!-- slider-container end-->
+                </div> <!-- col-lg-12 end -->
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- commentSlider end-->
+
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row"> <!-- row start-->
+                <div class="col-lg-12">
+                    <h2>OZELLIKLER</h2>
+                    <p>Mübarek cuma günü için, birbirinden güzel resimli cuma mesajları.
+                        Her zaman en güncel olan Resimli Cuma Mesajları'nı sevdiğin insanlarla kolayca kopyala yada paylaş.
+                        </p>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs" id="cumaTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="true">
+                            MESAJLAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="hadis-tab" data-toggle="tab" href="#hadis" role="tab" aria-controls="hadises" aria-selected="false">
+                            HADISLER</a>
+                    </li>
+                </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="feautrepane" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="container"> <!-- container start-->
+                                <div class="row">
+                                    <div class="col-lg-4"> <!-- col-lg-4 start-->
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">FEATURE 1</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="card-icon">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">FEATURE 2</h4>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+                                            <div class="card-icon">
+
+                                            </div>
+                                    </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">FEATURE 3</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                            </div>
+                                            <div class="card-icon">
+
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div> <!-- col-lg-4 end-->
+                                <div class="col-lg-4"> <!-- col-lg-4 start-->
+                                    <img class="img-responsive" src="img/features-iphone-1.png" alt="alternative">
+                                </div> <!-- col-lg-4 end-->
+                                <div class="col-lg-4"> <!-- col-lg-4 start-->
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">FEATURE 4</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="card-icon">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">FEATURE 5</h4>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+                                            <div class="card-icon">
+
+                                            </div>
+                                    </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">FEATURE 6</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                            </div>
+                                            <div class="card-icon">
+
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div> <!-- col-lg-4 end-->
+                            </div> <!-- container end-->
+                        </div>
+                    </div>
+
+            </div> <!-- row end-->
+
+                
+
+        </div> <!-- container end-->
+    </div>
+
+
+    <footer>
+            <script>
+                var mySwiper = new Swiper('.swiper-container', {
+
+                    direction: 'horizontal',
+                    loop: true,
+
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }
+                })
+            </script>
+            
+    </footer>
 </body>
-<footer>
-    <script>
-    </script>
-</footer>
+
 
 </html>

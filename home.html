@@ -4,65 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/fontawsome-all.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Cuma Mesajları</title>
 </head>
 
 <body>
-    <header>
     <div class="container-fluid"> <!-- container-fluid start -->
-            <nav class="navbar navbar-expand-md navbar-custom fixed-top"> <!-- navbar start -->
-                    <a class="navbar-brand" href="#">CUMA MESAJLARI</a>
+            <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top top-nav-collapse"> <!-- navbar start -->
+                    <a class="navbar-brand sitename" href="#">CUMA MESAJLARI</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>                    
                     <div class="navbar-collapse collapse" id="navbarNav">
-                        <div class="navbarContainer"></div>
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                           <a class="nav-link page-scroll active" href="#">ANASAYFA <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link page-scroll" href="#">OZELLIKLER</a>
+                          <a class="nav-link page-scroll" href="#features">OZELLIKLER</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link page-scroll" href="#">ONIZLEME</a>
+                          <a class="nav-link page-scroll" href="#preview">ONIZLEME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <div class="dropdown">
-                                <a href="#" class="nav-link page-scroll">DETAYLAR</a>
-                                <div class="dropdown-content">
-                                    <a href="#">SARTLAR KOSULLAR</a>
-                                    <a href="#">GIZLILIK POLITIKASI</a>
+                                <a href="#details" class="nav-link dropdown-toggle page-scroll" role="button" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">DETAYLAR</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item"><span class="item-text">
+                                        SARTLAR KOSULLAR</span></a>
+                                    <div class="dropdown-items-divide-hr"></div>
+                                    <a href="#" class="dropdown-item"><span class="item-text">
+                                        GIZLILIK POLITIKASI</span></a>
                             </div>                              
-                          </div>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#">ILETISIM</a>
+                        <a class="nav-link page-scroll" href="#contact">ILETISIM</a>
                         </li>                        
                       </ul>
                     </div>
                   </nav> <!-- navbar end -->
-    </div>  <!-- container-fluid end -->       
-    <div class="container mainContainer"> <!-- Container start -->        
+    </div>  <!-- container-fluid end -->
+    </div>
+    <header id="header" class="header">
+        <div class="header-content">      
+    <div class="container"> <!-- Container start -->        
         <div class="row"> <!-- Row başlangıcı -->
-            <div class="col-lg-6 mainText"> <!-- col-lg-6 start -->
+            <div class="col-lg-6"> <!-- col-lg-6 start -->
+                <div class="text-container">
                 <h1>Cuma Mesajları</h1>
-                <p class="mainparagh">Mübarek cuma günü için, birbirinden güzel resimli cuma mesajları.
+                <p class="p-large">Mübarek cuma günü için, birbirinden güzel resimli cuma mesajları.
                 Her zaman en güncel olan Resimli Cuma Mesajları'nı sevdiğin insanlarla kolayca kopyala yada paylaş.
                 </p>
-                <a class="app-download-link" href="#">
-                        <i class="fab fa-apple"></i>APP STORE
+                <a class="btn-solid-lg page-scroll" href="#">
+                        <i class="fab fa-apple"></i>
+                        APP STORE
                 </a>
-                <a class="app-download-link" href="#">
-                    <i class="fab fa-apple"></i>PLAY STORE
+                <a class="btn-solid-lg page-scroll" href="#">
+                    <i class="fab fa-google-play"></i>
+                    PLAY STORE
             </a>
+                </div>
             </div> <!-- col-lg-6 end -->
-            <div class="col-lg-6 mainImage"> <!-- col-lg-6 start -->
-                <img src="img/header-iphone.png" alt="alternative" class="img img-responsive">
+            <div class="col-lg-6"> <!-- col-lg-6 start -->
+                <div class="image-container">                
+                <img src="img/header-iphone.png" alt="alternative" class="img-fluid">
+                </div>
             </div> <!-- col-lg-6 end -->            
         </div> <!-- row end -->
     </div><!-- container end -->
@@ -169,7 +180,7 @@
             <div class="row"> <!-- row start -->
                 <div class="col-lg-12"> <!-- col-lg-12 start -->
                     <h2>OZELLIKLER</h2>
-                    <p class="featuretext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati incidunt numquam autem vel natus.</p>
+                    <p class="p-heading p-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati incidunt numquam autem vel natus.</p>
                 </div> <!-- col-lg-12 end -->
             </div> <!-- row end -->
             <div class="row"> <!-- row start -->
@@ -225,7 +236,7 @@
                                             </div>
                                 </div> <!-- col-lg-4 end -->
                                 <div class="col-lg-4"> <!-- col-lg-4 start -->
-                                    <img class="img-responsive" src="img/features-iphone-1.png" alt="messagefeature">
+                                    <img class="img-fluid" src="img/features-iphone-1.png" alt="messagefeature">
                                 </div> <!-- col-lg-4 end -->
                                 <div class="col-lg-4"> <!-- col-lg-4 start -->
                                     <div class="card right-pane first">
@@ -269,7 +280,7 @@
                             <div class="container"> <!-- container start -->
                                 <div class="row"> <!-- row start -->
                                     <div class="col-md-4"> <!-- col-md-4 start -->
-                                        <img class="img-responsive" src="img/features-iphone-2.png" alt="hadisfeature">
+                                        <img class="img-fluid" src="img/features-iphone-2.png" alt="hadisfeature">
                                     </div> <!-- col-md-4 end -->
                                     <div class="col-md-8"> <!-- col-md-8 start -->
                                         <div class="text-area">
@@ -323,14 +334,349 @@
             </div> <!-- row end -->
         </div> <!-- container end -->
     </div>
-    
-                    
-
+    <div class="preview" id="preview"> <!-- preview start -->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-12"> <!-- col-lg-12 start -->
+                    <h2>ONIZLEME</h2>
+                    <div class="p-heading p-large">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem.</div>
+                </div> <!-- col-lg-12 end -->
+            </div> <!-- row end -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-12"> <!-- col-lg-12 start -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="video-popup" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn" target="_blank">
+                            <img class="img-fluid" src="img/video-frame.jpg" alt="videopreview">
+                            <span class="video-play-button">
+                                <span></span>
+                            </span></a>
+                        </div>
+                    </div>
+                </div> <!-- col-lg-12 end -->
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- preview end -->
+    <div class="details" id="details"> <!-- details start -->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-6"> <!-- col-lg-6 start -->
+                    <img class="img-fluid" src="img/details-1-iphone.png" alt="detail">
+                </div> <!-- col-lg-6 end -->
+                <div class="col-lg-6"> <!-- col-lg-6 start -->
+                    <div class="text-container">
+                        <h3>Detay</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maiores explicabo, cumque architecto dignissimos nemo eaque.</p>
+                        <a class="detail-button popup-with-move-anim" href="#detail-1-popup">Öğren</a>
+                    </div>
+                </div> <!-- col-lg-6 end -->
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- details end -->
+    <div class="detail-2"> <!-- detail-2 start -->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-6"> <!-- col-lg-6 start -->
+                    <div class="text-container">
+                        <h3>Detay-2</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ipsum exercitationem obcaecati ullam repudiandae expedita quam consectetur.</p>
+                        <a class="detail-button popup-with-move-anim" href="#detail-2-popup">Detay-2</a>
+                    </div>
+                </div> <!-- col-lg-6 end -->
+                <div class="col-lg-6"> <!-- col-lg-6 start -->
+                    <img class="img-fluid" src="img/details-2-iphone.png" alt="detail-2">
+                </div> <!-- col-lg-6 end -->
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- detail-2 end -->
+    <div class="detail-button-popup zoom-anim-dialog mfp-hide" id="detail-1-popup"> <!-- pop-up start -->
+        <div class="row"> <!-- row start -->
+            <button title="Kapat (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-6"> <!-- col-lg-6 start -->
+                    <img class="img-fluid" src="img/details-lightbox-1.png" alt="detail1">
+                </div> <!-- col-lg-6 end -->
+                <div class="col-lg-6"> <!-- col-lg-6 start -->
+                    <h3>Detay 1</h3>
+                    <hr/>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae!</p>
+                    <h4>Detay 2</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <table> <!-- table start-->
+                        <tbody>
+                            <tr>
+                                <td>Lorem.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum dolor..</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum dolor.</td>
+                            </tr>
+                        </tbody>
+                    </table><!-- table end-->
+                    <a class="detail-button" href="#details">Detaylar</a>
+                    <a class="btn-outline-reg mfp-close as-button" href="#details">Geri Dön</a>
+                </div> <!-- col-lg-6 end -->
+        </div> <!-- row end -->
+    </div>  <!-- pop-up end -->
+    <div class="detail-button-popup zoom-anim-dialog mfp-hide" id="detail-2-popup"> <!-- pop-up start -->
+        <div class="row"> <!-- row start -->
+            <button title="Kapat (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-6"> <!-- col-lg-6 start -->
+                <img class="img-fluid" src="img/details-lightbox-2.png" alt="detail2">
+            </div> <!-- col-lg-6 end -->
+            <div class="col-lg-6"> <!-- col-lg-6 start -->
+                <h3>Detay 1</h3>
+                <hr/>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente!</p>
+                <h4>Detay 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, repudiandae?</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <table> <!-- table start-->
+                    <tbody>
+                            <tr>
+                                <td>Lorem.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum dolor..</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem, ipsum dolor.</td>
+                            </tr>
+                    </tbody>
+                </table> <!-- table end-->
+                <a class="detail-button" href="#details">Detaylar</a>
+                <a class="btn-outline-reg mfp-close as-button" href="#detail-2">Geri Dön</a>
+            </div> <!-- col-lg-6 end -->
+        </div> <!-- row end -->
+    </div> <!-- pop-up end -->
+    <div class="img-slider"> <!--img-slider start-->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-12"> <!-- col-lg-12 start -->
+                  <div class="slider-container"> <!-- slider-container start -->
+                      <div class="swiper-container image-slider swiper-container-horizantal">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="img/screenshot-5.png">
+                                <img class="img-fluid" src="img/screenshot-5.png"  alt="alternative"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/screenshot-6.png">
+                                <img class="img-fluid" src="img/screenshot-6.png"  alt="alternative"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/screenshot-7.png">
+                                <img class="img-fluid" src="img/screenshot-7.png"  alt="alternative"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/screenshot-8.png">
+                                <img class="img-fluid" src="img/screenshot-8.png"  alt="alternative"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/screenshot-9.png">
+                                <img class="img-fluid" src="img/screenshot-9.png"  alt="alternative"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/screenshot-10.png">
+                                <img class="img-fluid" src="img/screenshot-10.png"  alt="alternative"></a>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                      </div> 
+                  </div> <!-- slider-container end --> 
+                </div> <!-- col-lg-12 end -->
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div>   <!--img-slider start-->
+    <div class="download-section"> <!--download-section start-->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-6 col-xl-5"> <!--col-lg-6 col-xl-5 start -->
+                    <div class="text-container"> <!-- text-container start -->
+                        <h2>Cuma Mesajları'nı İndir</h2>
+                        <p class="p-large"
+                        >Mübarek cuma günü için, birbirinden güzel resimli cuma mesajları. Her zaman en güncel olan Resimli Cuma Mesajları'nı sevdiğin insanlarla kolayca kopyala yada paylaş.
+                        </p>
+                        <a class="btn-solid-lg page-scroll" href="#">
+                                <i class="fab fa-apple"></i>
+                                APP STORE
+                        </a>
+                        <a class="btn-solid-lg page-scroll" href="#">
+                            <i class="fab fa-google-play"></i>
+                            PLAY STORE
+                    </a>
+                    </div> <!-- text-container end -->
+                </div> <!--col-lg-6 col-xl-5 end -->
+                <div class="col-lg-6 col-xl-7"> <!--col-lg-6 col-xl-7 start -->
+                    <div class="image-container">
+                        <img class="img-fluid" src="img/download.png" alt="alternative">
+                    </div>
+                </div> <!--col-lg-6 col-xl-7 end -->
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!--download-section end-->
+    <div class="counter"> <!-- counter start-->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-12"> <!-- col-lg-12 start -->
+                    <div id="counter">
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="976">976</div>
+                            <p class="counter-info">Cuma Mesajı</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="211">211</div>
+                            <p class="counter-info">Hadis</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="357">357</div>
+                            <p class="counter-info">Yapılan Yorum</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="86">86</div>
+                            <p class="counter-info">Kandil Mesajı</p>
+                        </div>
+                    </div>
+                </div> <!-- col-lg-12 end -->
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- counter end-->
+    <div class="form" id="contact"> <!-- contact start-->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-12"> <!-- col-lg-12 start -->
+                    <h2>İLETİŞİM</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="contact-text">Bize aşağıdaki form aracılığıyla ulaşabilirsiniz</li>
+                        <li>
+                            <a class="mail" href="mailto:cuma@cumamesajlari.com">cuma@cumamesajlari.com</a>
+                        </li>
+                    </ul>
+                </div> <!-- col-lg-12 end -->
+            </div> <!-- row end -->
+            <div class="row"> <!-- row start -->
+              <div class="col-lg-6 offset-lg-3">
+                  <form id="contactForm">
+                     <div class="form-group">
+                         <input type="text" class="form-control-input" id="cname" required>
+                         <label class="label-control" for="cname">İsim</label>
+                         <div class="help-block with-errors"></div>
+                     </div> 
+                     <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" required>
+                        <label class="label-control" for="cemail">E-Mail</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Mesajınız</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>
+                        Cuma mesajlarinin şartlarını okudum ve kabul ediyorum.
+                        <a href="privacy-policy.html">Gizlilik Politikası</a>
+                        <a href="terms-conditions.html">Şartlar Koşullar</a>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button disabled">Gönder</button>
+                    </div>
+                    <div class="form-message">
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>  
+                  </form>
+              </div>  
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- contact end--> 
+    <div class="footer"> <!-- about section start -->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-md-4"> <!-- col-md-4 start-->
+                    <div class="footer-col">
+                        <h4>Hakkımızda</h4>
+                        <p>Mübarek cuma günü için, birbirinden güzel resimli cuma mesajları.</p>
+                    </div>
+                </div> <!-- col-md-4 end-->
+                <div class="col-md-4"> <!-- col-md-4 start-->
+                    <div class="footer-col middle">
+                        <h4>Önemli Linkler</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <div class="media-body">
+                                    Bunları okuyun; </br>
+                                    <a class="footer-links" href="privacy-policy.html">Gizlilik Politikası</a>
+                                    ,
+                                    <a class="footer-links" href="terms-conditions.html">Şartlar Koşullar</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- col-md-4 end-->
+                <div class="col-md-4"> <!-- col-md-4 start-->
+                    <div class="footer-col last">
+                        <h4>Sosyal Medya</h4>
+                        <span class="social-media">
+                            <a href="#">Facebook</a>
+                        </span>
+                        <span class="social-media">
+                                <a href="#">Twitter</a>
+                        </span>
+                        <span class="social-media">
+                                <a href="#">Google +</a>
+                        </span>
+                        <span class="social-media">
+                                <a href="#">Instagram</a>
+                        </span>
+                        <span class="social-media">
+                                <a href="#">LinkedIn</a>
+                        </span>
+                    </div>
+                </div> <!-- col-md-4 end-->
+            </div> <!-- row end -->
+        </div>  <!-- container end -->
+    </div> <!-- about section start -->
+    <div class="copyright"> <!-- copyright start -->
+        <div class="container"> <!-- container start -->
+            <div class="row"> <!-- row start -->
+                <div class="col-lg-12">
+                    <p class="p-small">
+                        Copyright © Cuma Mesajları - Cuma Mesajları Landing Page Template by
+                        <a href="https://github.com/oguzbilgin" target="_blank">Oğuz Bilgin</a>
+                    </p>
+                </div>
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </div> <!-- copyright start -->
 
     <footer>
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/bootstrap.min.js"></script>
             <script src="assets/js/swiper.min.js"></script>
+            <script src="assets/js/jquery.magnific-popup.min.js"></script>
+            <script src="assets/js/validator.min.js"></script>
             <script src="assets/js/scripts.js"></script>
             
             

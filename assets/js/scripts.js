@@ -87,13 +87,13 @@ $('a[href*="#"]')
 
   $("#contactForm").validate({
     rules: {
-      name:{ "required",
+      name: "required",
       email:{
         required:true,
         email: true
       }
           
-        }
+        
 
     },
     messages: {

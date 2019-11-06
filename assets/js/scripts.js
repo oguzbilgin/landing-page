@@ -82,3 +82,25 @@ $('a[href*="#"]')
       }
     }
   });
+
+  /* validate js */
+
+  $("#contactForm").validate({
+    rules: {
+      name:{ "required",
+      email:{
+        required:true,
+        email: true
+      }
+          
+        }
+
+    },
+    messages: {
+      name: "Bu alanı doldurmak zorunludur.",
+       email : {
+         required: "e-mail adresinizi giriniz.",
+         email: "e-mailiniz e-mail formatında (@ içermek) olmak zorundadır."
+       }
+    }
+});

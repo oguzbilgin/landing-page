@@ -577,28 +577,28 @@
             </div> <!-- row end -->
             <div class="row"> <!-- row start -->
               <div class="col-lg-6 offset-lg-3">
-                  <form id="contactForm">
+                  <form class="cmxform" id="contactForm" method="POST" action="">
                      <div class="form-group">
-                         <input type="text" class="form-control-input" id="cname" required>
-                         <label class="label-control" for="cname">İsim</label>
-                         <div class="help-block with-errors"></div>
+                         <input type="text" class="form-control-input" id="name" name="name" required>
+                         <label class="label-control" for="name">İsim</label>
+                         <div class="error" style="display:none;"></div>
                      </div> 
                      <div class="form-group">
-                        <input type="email" class="form-control-input" id="cemail" required>
-                        <label class="label-control" for="cemail">E-Mail</label>
-                        <div class="help-block with-errors"></div>
+                        <input type="email" class="form-control-input" id="email" name="email" required>
+                        <label class="label-control" for="email">E-Mail</label>
+                        <div class="error" style="display:none;"></div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                        <label class="label-control" for="cmessage">Mesajınız</label>
-                        <div class="help-block with-errors"></div>
+                        <textarea class="form-control-textarea" id="message" name="message"required></textarea>
+                        <label class="label-control" for="message">Mesajınız</label>
+                        <div class="error" style="display:none;"></div>
                     </div>
                     <div class="form-group checkbox">
                         <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>
                         Cuma mesajlarinin şartlarını okudum ve kabul ediyorum.
                         <a href="privacy-policy.html">Gizlilik Politikası</a>
                         <a href="terms-conditions.html">Şartlar Koşullar</a>
-                        <div class="help-block with-errors"></div>
+                        <div class="error" style="display:none;"></div>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="form-control-submit-button disabled">Gönder</button>
@@ -676,7 +676,7 @@
             <script src="assets/js/bootstrap.min.js"></script>
             <script src="assets/js/swiper.min.js"></script>
             <script src="assets/js/jquery.magnific-popup.min.js"></script>
-            <script src="assets/js/validator.min.js"></script>
+            <script src="assets/js/jquery.validate.min.js"></script>
             <script src="assets/js/scripts.js"></script>
             
             

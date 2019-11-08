@@ -115,12 +115,12 @@ $(function() {
       }
       });
 
-    /* Contact Form */
-    $("#contactForm").validator().on("submit", function(event) {
+     /* Contact Form */
+     $("#contactForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             cformError();
-            csubmitMSG(false, "Tüm Alanların Doldurulması Zorunludur.");
+            csubmitMSG(false, "Tüm alanların doldurulması zorunludur!");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -177,7 +177,7 @@ $(function() {
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             pformError();
-            psubmitMSG(false, "Tüm Alanların Doldurulması Zorunludur.");
+            psubmitMSG(false, "Tüm alanların doldurulası zorunludur!");
         } else {
             // everything looks good!
             event.preventDefault();
